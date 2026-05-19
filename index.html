@@ -3,8 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cendilab | Laboratorio en Caracas</title>
-  <meta name="description" content="Cendilab, laboratorio en Caracas. Información de contacto, horario, teléfono y ubicación." />
+
+  <title>LABORATORIO CENDILAB, C.A. | Laboratorio Clínico en Caracas</title>
+
+  <meta
+    name="description"
+    content="LABORATORIO CENDILAB, C.A. Laboratorio clínico en Caracas, Venezuela. Información de contacto, ubicación, teléfonos y atención al paciente."
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://cendilab.com" />
+
+  <meta property="og:title" content="LABORATORIO CENDILAB, C.A." />
+  <meta
+    property="og:description"
+    content="Laboratorio clínico en Caracas, Venezuela."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cendilab.com" />
+
+  <meta name="theme-color" content="#0f172a" />
+
   <style>
     * {
       box-sizing: border-box;
@@ -13,35 +33,50 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fb;
+      background: #f4f7fb;
       color: #1f2937;
       line-height: 1.6;
     }
 
-    main {
+    .wrapper {
+      width: 100%;
       min-height: 100vh;
+      padding: 40px 20px;
       display: flex;
-      align-items: center;
       justify-content: center;
-      padding: 24px;
+      align-items: center;
     }
 
     .card {
       width: 100%;
-      max-width: 760px;
+      max-width: 900px;
       background: #ffffff;
-      border-radius: 18px;
-      padding: 36px;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+      border-radius: 22px;
+      padding: 42px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
     }
 
-    .label {
-      margin: 0 0 8px;
-      font-size: 14px;
-      font-weight: 700;
+    .top {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 18px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 12px;
+      background: #eff6ff;
       color: #2563eb;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      margin-bottom: 18px;
     }
 
     h1 {
@@ -52,25 +87,36 @@
     }
 
     .subtitle {
-      margin: 12px 0 24px;
+      margin-top: 12px;
       font-size: 20px;
+      color: #4b5563;
+    }
+
+    .description {
+      margin-top: 24px;
+      font-size: 17px;
       color: #374151;
     }
 
     .section {
-      margin-top: 24px;
-      padding-top: 20px;
+      margin-top: 36px;
+      padding-top: 28px;
       border-top: 1px solid #e5e7eb;
     }
 
     h2 {
-      margin: 0 0 12px;
-      font-size: 18px;
+      margin: 0 0 16px;
+      font-size: 22px;
       color: #111827;
     }
 
     p {
-      margin: 8px 0;
+      margin: 10px 0;
+      color: #374151;
+    }
+
+    strong {
+      color: #111827;
     }
 
     a {
@@ -83,15 +129,45 @@
       text-decoration: underline;
     }
 
-    .footer {
-      margin-top: 28px;
-      font-size: 13px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .box {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .map {
+      margin-top: 20px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #dbe3ee;
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+      text-align: center;
+      font-size: 14px;
       color: #6b7280;
     }
 
     @media (max-width: 640px) {
       .card {
-        padding: 26px;
+        padding: 28px;
       }
 
       h1 {
@@ -101,43 +177,229 @@
       .subtitle {
         font-size: 18px;
       }
+
+      .description {
+        font-size: 16px;
+      }
     }
   </style>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "LABORATORIO CENDILAB, C.A.",
+    "url": "https://cendilab.com",
+    "telephone": "+58-414-9134656",
+    "email": "info@cendilab.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "AV SAN MARTIN CC SAN MARTIN NIVEL S1 LOCAL 16-16 URB LOS MOLINOS",
+      "addressLocality": "CARACAS",
+      "addressRegion": "DISTRITO CAPITAL",
+      "postalCode": "1020",
+      "addressCountry": "VE"
+    }
+  }
+  </script>
 </head>
+
 <body>
-  <main>
-    <section class="card" aria-labelledby="title">
-      <p class="label">Sitio oficial</p>
-      <h1 id="title">Cendilab</h1>
-      <p class="subtitle">Laboratorio clínico en Caracas</p>
 
-      <p>
-        Cendilab ofrece servicios de laboratorio clínico y atención a pacientes en Caracas.
-        Para información sobre exámenes, horarios y atención, comunícate directamente con el equipo.
-      </p>
+  <div class="wrapper">
 
-      <div class="section">
+    <main class="card">
+
+      <section class="top">
+
+        <!-- CAMBIA ESTE SRC POR TU LOGO -->
+        <img
+          src="https://cendilab.com/logo.png"
+          alt="Logo Cendilab"
+          class="logo"
+        />
+
+        <div class="tag">
+          Sitio Oficial
+        </div>
+
+        <h1>LABORATORIO CENDILAB, C.A.</h1>
+
+        <p class="subtitle">
+          Laboratorio clínico en Caracas, Venezuela
+        </p>
+
+        <p class="description">
+          Cendilab ofrece servicios de laboratorio clínico,
+          diagnóstico y atención a pacientes en Caracas.
+          Para información sobre exámenes, horarios y atención,
+          comunícate directamente con nuestro equipo.
+        </p>
+
+      </section>
+
+      <section class="section">
+
+        <h2>Información Fiscal</h2>
+
+        <div class="grid">
+
+          <div class="box">
+            <p>
+              <strong>Razón Social</strong>
+            </p>
+
+            <p>
+              LABORATORIO CENDILAB, C.A.
+            </p>
+          </div>
+
+          <div class="box">
+            <p>
+              <strong>RIF</strong>
+            </p>
+
+            <p>
+              J-40187400-2
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="section">
+
         <h2>Contacto</h2>
-        <p><strong>Laboratorio:</strong> <a href="tel:+582124520922">0212-4520922</a></p>
-        <p><strong>Consultas:</strong> <a href="tel:+582124517883">0212-4517883</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/584149134656">0414-9134656</a></p>
-      </div>
 
-      <div class="section">
-        <h2>Horario</h2>
-        <p><strong>Lunes a viernes:</strong> 7:00 a. m. – 4:00 p. m.</p>
-        <p><strong>Sábado y domingo:</strong> Cerrado</p>
-      </div>
+        <div class="grid">
 
-      <div class="section">
+          <div class="box">
+            <p>
+              <strong>Teléfono Laboratorio</strong>
+            </p>
+
+            <p>
+              <a href="tel:+582124520922">
+                0212-4520922
+              </a>
+            </p>
+          </div>
+
+          <div class="box">
+            <p>
+              <strong>Consultas</strong>
+            </p>
+
+            <p>
+              <a href="tel:+582124517883">
+                0212-4517883
+              </a>
+            </p>
+          </div>
+
+          <div class="box">
+            <p>
+              <strong>WhatsApp</strong>
+            </p>
+
+            <p>
+              <a href="https://wa.me/584149134656">
+                0414-9134656
+              </a>
+            </p>
+          </div>
+
+          <div class="box">
+            <p>
+              <strong>Email</strong>
+            </p>
+
+            <p>
+              <a href="mailto:info@cendilab.com">
+                info@cendilab.com
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="section">
+
+        <h2>Horario de Atención</h2>
+
+        <div class="grid">
+
+          <div class="box">
+            <p>
+              <strong>Lunes a Viernes</strong>
+            </p>
+
+            <p>
+              7:00 a.m. – 4:00 p.m.
+            </p>
+          </div>
+
+          <div class="box">
+            <p>
+              <strong>Sábados y Domingos</strong>
+            </p>
+
+            <p>
+              Cerrado
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="section">
+
         <h2>Ubicación</h2>
-        <p>Av. San Martín, C.C. San Martín, Nivel Sótano, Local 01-16, frente a EPA, Caracas.</p>
-      </div>
 
-      <p class="footer">
-        Esta página temporal permite mantener el dominio oficial de Cendilab activo y seguro mediante HTTPS.
-      </p>
-    </section>
-  </main>
+        <p>
+          AV SAN MARTIN CC SAN MARTIN NIVEL S1 LOCAL 16-16
+          URB LOS MOLINOS, CARACAS, DISTRITO CAPITAL, 1020
+        </p>
+
+        <div class="map">
+
+          <iframe
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Av%20San%20Martin%20Centro%20Comercial%20San%20Martin%20Caracas&t=&z=15&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+
+        </div>
+
+      </section>
+
+      <section class="section">
+
+        <h2>Política de Privacidad</h2>
+
+        <p>
+          La información compartida por los pacientes y usuarios
+          será utilizada únicamente para fines de atención,
+          contacto y servicios relacionados con LABORATORIO CENDILAB, C.A.
+        </p>
+
+      </section>
+
+      <footer>
+        © 2026 LABORATORIO CENDILAB, C.A.<br />
+        RIF J-40187400-2<br />
+        Todos los derechos reservados.
+      </footer>
+
+    </main>
+
+  </div>
+
 </body>
 </html>
